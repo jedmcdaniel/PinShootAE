@@ -42,6 +42,7 @@
             this.btnParticipants.TabIndex = 0;
             this.btnParticipants.Text = "Participants";
             this.btnParticipants.UseVisualStyleBackColor = true;
+            this.btnParticipants.Click += new System.EventHandler(this.btnParticipants_Click);
             // 
             // btnEvents
             // 
@@ -81,7 +82,8 @@
             this.Controls.Add(this.btnEvents);
             this.Controls.Add(this.btnParticipants);
             this.Name = "Main";
-            this.Text = "Form1";
+            this.Text = "Pin Shoot";
+            this.Load += new System.EventHandler(this.Main_Load);
             this.ResumeLayout(false);
 
         }
