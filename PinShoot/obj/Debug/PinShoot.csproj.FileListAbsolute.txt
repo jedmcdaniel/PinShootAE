@@ -1,0 +1,9 @@
+C:\Projects\PinShoot\PinShoot\bin\Debug\PinShoot.exe.config
+C:\Projects\PinShoot\PinShoot\bin\Debug\PinShoot.exe
+C:\Projects\PinShoot\PinShoot\bin\Debug\PinShoot.pdb
+C:\Projects\PinShoot\PinShoot\obj\Debug\PinShoot.csprojResolveAssemblyReference.cache
+C:\Projects\PinShoot\PinShoot\obj\Debug\PinShoot.Main.resources
+C:\Projects\PinShoot\PinShoot\obj\Debug\PinShoot.Properties.Resources.resources
+C:\Projects\PinShoot\PinShoot\obj\Debug\PinShoot.csproj.GenerateResource.Cache
+C:\Projects\PinShoot\PinShoot\obj\Debug\PinShoot.exe
+C:\Projects\PinShoot\PinShoot\obj\Debug\PinShoot.pdb
