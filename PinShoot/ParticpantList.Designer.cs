@@ -51,7 +51,8 @@
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(75, 23);
             this.btnClose.TabIndex = 0;
-            this.btnClose.Text = "Close";
+            this.btnClose.TabStop = false;
+            this.btnClose.Text = "&Close";
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
@@ -95,7 +96,7 @@
             this.FirstName.ReadOnly = true;
             this.FirstName.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.FirstName.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.FirstName.Width = 63;
+            this.FirstName.Width = 57;
             // 
             // LastName
             // 
@@ -104,7 +105,7 @@
             this.LastName.HeaderText = "Last Name";
             this.LastName.Name = "LastName";
             this.LastName.ReadOnly = true;
-            this.LastName.Width = 83;
+            this.LastName.Width = 77;
             // 
             // Gender
             // 
@@ -163,7 +164,7 @@
             this.btnCreate.Name = "btnCreate";
             this.btnCreate.Size = new System.Drawing.Size(75, 23);
             this.btnCreate.TabIndex = 2;
-            this.btnCreate.Text = "Create New";
+            this.btnCreate.Text = "Create &New";
             this.btnCreate.UseVisualStyleBackColor = true;
             this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
             // 

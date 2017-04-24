@@ -35,5 +35,12 @@ namespace PinShoot
         {
             this.CenterToScreen();
         }
+
+        private void btnEvents_Click(object sender, EventArgs e)
+        {
+            EventList frm = new EventList();
+            frm.ShowDialog();
+
+        }
     }
 }

@@ -40,7 +40,7 @@
             this.btnParticipants.Name = "btnParticipants";
             this.btnParticipants.Size = new System.Drawing.Size(106, 34);
             this.btnParticipants.TabIndex = 0;
-            this.btnParticipants.Text = "Participants";
+            this.btnParticipants.Text = "&Participants";
             this.btnParticipants.UseVisualStyleBackColor = true;
             this.btnParticipants.Click += new System.EventHandler(this.btnParticipants_Click);
             // 
@@ -50,8 +50,9 @@
             this.btnEvents.Name = "btnEvents";
             this.btnEvents.Size = new System.Drawing.Size(106, 30);
             this.btnEvents.TabIndex = 1;
-            this.btnEvents.Text = "Events";
+            this.btnEvents.Text = "&Events";
             this.btnEvents.UseVisualStyleBackColor = true;
+            this.btnEvents.Click += new System.EventHandler(this.btnEvents_Click);
             // 
             // btnTimeEntry
             // 
@@ -59,7 +60,7 @@
             this.btnTimeEntry.Name = "btnTimeEntry";
             this.btnTimeEntry.Size = new System.Drawing.Size(106, 34);
             this.btnTimeEntry.TabIndex = 2;
-            this.btnTimeEntry.Text = "Time Entry";
+            this.btnTimeEntry.Text = "&Time Entry";
             this.btnTimeEntry.UseVisualStyleBackColor = true;
             // 
             // btnExit
@@ -68,7 +69,7 @@
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(75, 23);
             this.btnExit.TabIndex = 3;
-            this.btnExit.Text = "Exit";
+            this.btnExit.Text = "E&xit";
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 

@@ -8,3 +8,6 @@ C:\Projects\PinShoot\PinShoot\obj\Debug\PinShoot.exe
 C:\Projects\PinShoot\PinShoot\obj\Debug\PinShoot.pdb
 C:\Projects\PinShoot\PinShoot\obj\Debug\PinShoot.frmParticipant.resources
 C:\Projects\PinShoot\PinShoot\obj\Debug\PinShoot.ParticpantList.resources
+C:\Projects\PinShoot\PinShoot\obj\Debug\PinShoot.csprojResolveAssemblyReference.cache
+C:\Projects\PinShoot\PinShoot\obj\Debug\PinShoot.EventList.resources
+C:\Projects\PinShoot\PinShoot\obj\Debug\PinShoot.frmEvent.resources

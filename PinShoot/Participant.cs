@@ -62,8 +62,8 @@ namespace PinShoot
                 command.Parameters.AddWithValue("@Email", txtEmail.Text);
                 command.Parameters.AddWithValue("@Phone", txtPhone.Text);
                 command.Parameters.AddWithValue("@DepartmentAffiliation", txtClub.Text);
-                command.Parameters.AddWithValue("@FkShSyCodeUSPSAClass", ddlUSPSA.SelectedValue);
-                command.Parameters.AddWithValue("@FkShSyCodeSCClass", ddlSCClass.SelectedValue);
+                command.Parameters.AddWithValue("@FkShSyCodeUSPSAClass", (int)ddlUSPSA.SelectedValue > 0 ? ddlUSPSA.SelectedValue : DBNull.Value);
+                command.Parameters.AddWithValue("@FkShSyCodeSCClass", (int)ddlSCClass.SelectedValue > 0 ? ddlSCClass.SelectedValue : DBNull.Value);
                 command.Parameters.AddWithValue("@IsActive", chkIsActive.Checked);
                 command.ExecuteNonQuery();
             }
@@ -87,6 +87,7 @@ namespace PinShoot
             ddlSCClass.SelectedIndex = 0;
             chkIsActive.Checked = true;
             txtID.Text = "0";
+            txtFirstName.Focus();
         }
 
         public void OpenParticipant(int ParticipantId)
@@ -111,6 +112,7 @@ namespace PinShoot
             {
                 txtID.Text = "0";
                 txtID.Visible = false;
+                chkIsActive.Checked = true;
                 this.ShowDialog();
                 return;
             }
