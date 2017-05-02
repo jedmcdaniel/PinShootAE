@@ -42,5 +42,17 @@ namespace PinShoot
             frm.ShowDialog();
 
         }
+
+        private void btnTeams_Click(object sender, EventArgs e)
+        {
+            TeamList frm = new TeamList();
+            frm.ShowDialog();
+        }
+
+        private void btnPinTimeEntry_Click(object sender, EventArgs e)
+        {
+            FivePinResults frm = new FivePinResults();
+            frm.ShowDialog();
+        }
     }
 }

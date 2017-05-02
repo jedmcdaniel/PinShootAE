@@ -158,5 +158,22 @@ namespace PinShoot
         {
             _owner.LoadParticipantList();
         }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            var viewConString = System.Configuration.ConfigurationManager.ConnectionStrings["PinShootDb"].ConnectionString;
+            using (var conn = new SqlConnection(viewConString))
+            using (var command = new SqlCommand("SxParticipants", conn)
+            {
+                CommandType = CommandType.StoredProcedure,
+            })
+            {
+                conn.Open();
+                command.Parameters.AddWithValue("@RecId", int.Parse(txtID.Text));
+                command.ExecuteNonQuery();
+            }
+            this.Close();
+        }
+
     }
 }

@@ -35,6 +35,9 @@
             this.btnSave = new System.Windows.Forms.Button();
             this.btnSaveCreateNew = new System.Windows.Forms.Button();
             this.txtEventId = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.ddlEventType = new System.Windows.Forms.ComboBox();
+            this.btnDelete = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -50,13 +53,13 @@
             // 
             this.txtEventName.Location = new System.Drawing.Point(86, 13);
             this.txtEventName.Name = "txtEventName";
-            this.txtEventName.Size = new System.Drawing.Size(186, 20);
+            this.txtEventName.Size = new System.Drawing.Size(310, 20);
             this.txtEventName.TabIndex = 1;
             // 
             // chkIsActive
             // 
             this.chkIsActive.AutoSize = true;
-            this.chkIsActive.Location = new System.Drawing.Point(86, 40);
+            this.chkIsActive.Location = new System.Drawing.Point(86, 70);
             this.chkIsActive.Name = "chkIsActive";
             this.chkIsActive.Size = new System.Drawing.Size(56, 17);
             this.chkIsActive.TabIndex = 2;
@@ -65,7 +68,8 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(197, 76);
+            this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnCancel.Location = new System.Drawing.Point(321, 91);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
             this.btnCancel.TabIndex = 3;
@@ -75,7 +79,7 @@
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(116, 76);
+            this.btnSave.Location = new System.Drawing.Point(240, 91);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(75, 23);
             this.btnSave.TabIndex = 4;
@@ -85,7 +89,7 @@
             // 
             // btnSaveCreateNew
             // 
-            this.btnSaveCreateNew.Location = new System.Drawing.Point(11, 76);
+            this.btnSaveCreateNew.Location = new System.Drawing.Point(135, 91);
             this.btnSaveCreateNew.Name = "btnSaveCreateNew";
             this.btnSaveCreateNew.Size = new System.Drawing.Size(99, 23);
             this.btnSaveCreateNew.TabIndex = 5;
@@ -95,11 +99,39 @@
             // 
             // txtEventId
             // 
-            this.txtEventId.Location = new System.Drawing.Point(226, 40);
+            this.txtEventId.Location = new System.Drawing.Point(226, 65);
             this.txtEventId.Name = "txtEventId";
             this.txtEventId.Size = new System.Drawing.Size(46, 20);
             this.txtEventId.TabIndex = 6;
             this.txtEventId.Visible = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(13, 47);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(62, 13);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Event Type";
+            // 
+            // ddlEventType
+            // 
+            this.ddlEventType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ddlEventType.FormattingEnabled = true;
+            this.ddlEventType.Location = new System.Drawing.Point(86, 43);
+            this.ddlEventType.Name = "ddlEventType";
+            this.ddlEventType.Size = new System.Drawing.Size(310, 21);
+            this.ddlEventType.TabIndex = 8;
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.Location = new System.Drawing.Point(9, 91);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(75, 23);
+            this.btnDelete.TabIndex = 9;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // frmEvent
             // 
@@ -107,7 +139,10 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnCancel;
-            this.ClientSize = new System.Drawing.Size(284, 107);
+            this.ClientSize = new System.Drawing.Size(415, 127);
+            this.Controls.Add(this.btnDelete);
+            this.Controls.Add(this.ddlEventType);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.txtEventId);
             this.Controls.Add(this.btnSaveCreateNew);
             this.Controls.Add(this.btnSave);
@@ -134,5 +169,8 @@
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Button btnSaveCreateNew;
         private System.Windows.Forms.TextBox txtEventId;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox ddlEventType;
+        private System.Windows.Forms.Button btnDelete;
     }
 }

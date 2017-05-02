@@ -46,6 +46,7 @@ namespace PinShoot
                 conn.Open();
                 command.Parameters.AddWithValue("@RecId", int.Parse(txtEventId.Text));
                 command.Parameters.AddWithValue("@EventName", txtEventName.Text);
+                command.Parameters.AddWithValue("@FkShSyCodeEventType", ddlEventType.SelectedValue);
                 command.Parameters.AddWithValue("@IsActive", chkIsActive.Checked);
                 command.ExecuteNonQuery();
             }
@@ -71,6 +72,11 @@ namespace PinShoot
 
         public void OpenEvent(int eventId)
         {
+            var eventTypeList = Utilities.GetSysCodesByType(Types.SysTypes.EventType);
+            ddlEventType.ValueMember = "RecId";
+            ddlEventType.DisplayMember = "Name";
+            ddlEventType.DataSource = eventTypeList;
+
             if (eventId == 0)
             {
                 txtEventId.Text = "0";
@@ -97,6 +103,7 @@ namespace PinShoot
                 {
                     txtEventId.Text = eventId.ToString();
                     txtEventName.Text = reader["EventName"].ToString();
+                    ddlEventType.SelectedValue = reader["FkShSyCodeEventType"];
                     chkIsActive.Checked = (bool)reader["IsActive"];
                }
                 conn.Close();
@@ -108,6 +115,22 @@ namespace PinShoot
         private void frmEvent_FormClosing(object sender, FormClosingEventArgs e)
         {
             _owner.LoadEventList();
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            var viewConString = System.Configuration.ConfigurationManager.ConnectionStrings["PinShootDb"].ConnectionString;
+            using (var conn = new SqlConnection(viewConString))
+            using (var command = new SqlCommand("SxEvent", conn)
+            {
+                CommandType = CommandType.StoredProcedure,
+            })
+            {
+                conn.Open();
+                command.Parameters.AddWithValue("@RecId", int.Parse(txtEventId.Text));
+                command.ExecuteNonQuery();
+            }
+            this.Close();
         }
     }
 }

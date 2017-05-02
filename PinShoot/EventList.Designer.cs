@@ -33,13 +33,15 @@
             this.dtgEventList = new System.Windows.Forms.DataGridView();
             this.Edit = new System.Windows.Forms.DataGridViewButtonColumn();
             this.EventName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.EventType = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.IsActive = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dtgEventList)).BeginInit();
             this.SuspendLayout();
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(300, 294);
+            this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnCancel.Location = new System.Drawing.Point(685, 294);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
             this.btnCancel.TabIndex = 0;
@@ -65,11 +67,13 @@
             this.dtgEventList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Edit,
             this.EventName,
+            this.EventType,
             this.IsActive});
             this.dtgEventList.Location = new System.Drawing.Point(13, 13);
+            this.dtgEventList.MultiSelect = false;
             this.dtgEventList.Name = "dtgEventList";
             this.dtgEventList.ReadOnly = true;
-            this.dtgEventList.Size = new System.Drawing.Size(362, 275);
+            this.dtgEventList.Size = new System.Drawing.Size(747, 275);
             this.dtgEventList.TabIndex = 2;
             this.dtgEventList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgEventList_CellContentClick);
             // 
@@ -87,6 +91,13 @@
             this.EventName.Name = "EventName";
             this.EventName.ReadOnly = true;
             // 
+            // EventType
+            // 
+            this.EventType.DataPropertyName = "EventType";
+            this.EventType.HeaderText = "Event Type";
+            this.EventType.Name = "EventType";
+            this.EventType.ReadOnly = true;
+            // 
             // IsActive
             // 
             this.IsActive.DataPropertyName = "IsActive";
@@ -99,7 +110,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnCancel;
-            this.ClientSize = new System.Drawing.Size(386, 329);
+            this.ClientSize = new System.Drawing.Size(772, 329);
             this.Controls.Add(this.dtgEventList);
             this.Controls.Add(this.btnNewEvent);
             this.Controls.Add(this.btnCancel);
@@ -119,6 +130,7 @@
         private System.Windows.Forms.DataGridView dtgEventList;
         private System.Windows.Forms.DataGridViewButtonColumn Edit;
         private System.Windows.Forms.DataGridViewTextBoxColumn EventName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn EventType;
         private System.Windows.Forms.DataGridViewCheckBoxColumn IsActive;
     }
 }

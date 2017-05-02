@@ -58,6 +58,7 @@
             this.chkIsActive = new System.Windows.Forms.CheckBox();
             this.btnSaveAndCreateNew = new System.Windows.Forms.Button();
             this.txtID = new System.Windows.Forms.TextBox();
+            this.btnDelete = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -73,7 +74,7 @@
             // 
             this.txtFirstName.Location = new System.Drawing.Point(156, 13);
             this.txtFirstName.Name = "txtFirstName";
-            this.txtFirstName.Size = new System.Drawing.Size(200, 20);
+            this.txtFirstName.Size = new System.Drawing.Size(293, 20);
             this.txtFirstName.TabIndex = 1;
             // 
             // label2
@@ -89,13 +90,13 @@
             // 
             this.txtLastName.Location = new System.Drawing.Point(156, 39);
             this.txtLastName.Name = "txtLastName";
-            this.txtLastName.Size = new System.Drawing.Size(200, 20);
+            this.txtLastName.Size = new System.Drawing.Size(293, 20);
             this.txtLastName.TabIndex = 2;
             // 
             // btnSave
             // 
             this.btnSave.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btnSave.Location = new System.Drawing.Point(201, 385);
+            this.btnSave.Location = new System.Drawing.Point(293, 385);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(75, 23);
             this.btnSave.TabIndex = 15;
@@ -118,7 +119,7 @@
             this.ddlGender.FormattingEnabled = true;
             this.ddlGender.Location = new System.Drawing.Point(156, 65);
             this.ddlGender.Name = "ddlGender";
-            this.ddlGender.Size = new System.Drawing.Size(200, 21);
+            this.ddlGender.Size = new System.Drawing.Size(293, 21);
             this.ddlGender.TabIndex = 3;
             // 
             // label4
@@ -134,14 +135,14 @@
             // 
             this.txtStreetAddress.Location = new System.Drawing.Point(157, 92);
             this.txtStreetAddress.Name = "txtStreetAddress";
-            this.txtStreetAddress.Size = new System.Drawing.Size(200, 20);
+            this.txtStreetAddress.Size = new System.Drawing.Size(292, 20);
             this.txtStreetAddress.TabIndex = 4;
             // 
             // txtStreetAddress2
             // 
             this.txtStreetAddress2.Location = new System.Drawing.Point(157, 118);
             this.txtStreetAddress2.Name = "txtStreetAddress2";
-            this.txtStreetAddress2.Size = new System.Drawing.Size(200, 20);
+            this.txtStreetAddress2.Size = new System.Drawing.Size(292, 20);
             this.txtStreetAddress2.TabIndex = 5;
             // 
             // label5
@@ -175,7 +176,7 @@
             // 
             this.txtCity.Location = new System.Drawing.Point(156, 144);
             this.txtCity.Name = "txtCity";
-            this.txtCity.Size = new System.Drawing.Size(200, 20);
+            this.txtCity.Size = new System.Drawing.Size(293, 20);
             this.txtCity.TabIndex = 6;
             // 
             // label8
@@ -224,7 +225,7 @@
             // 
             this.txtEmail.Location = new System.Drawing.Point(157, 222);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(199, 20);
+            this.txtEmail.Size = new System.Drawing.Size(292, 20);
             this.txtEmail.TabIndex = 9;
             // 
             // label11
@@ -258,7 +259,7 @@
             this.ddlUSPSA.FormattingEnabled = true;
             this.ddlUSPSA.Location = new System.Drawing.Point(157, 300);
             this.ddlUSPSA.Name = "ddlUSPSA";
-            this.ddlUSPSA.Size = new System.Drawing.Size(200, 21);
+            this.ddlUSPSA.Size = new System.Drawing.Size(292, 21);
             this.ddlUSPSA.TabIndex = 12;
             // 
             // ddlSCClass
@@ -267,20 +268,20 @@
             this.ddlSCClass.FormattingEnabled = true;
             this.ddlSCClass.Location = new System.Drawing.Point(157, 327);
             this.ddlSCClass.Name = "ddlSCClass";
-            this.ddlSCClass.Size = new System.Drawing.Size(200, 21);
+            this.ddlSCClass.Size = new System.Drawing.Size(292, 21);
             this.ddlSCClass.TabIndex = 14;
             // 
             // txtClub
             // 
             this.txtClub.Location = new System.Drawing.Point(157, 274);
             this.txtClub.Name = "txtClub";
-            this.txtClub.Size = new System.Drawing.Size(196, 20);
+            this.txtClub.Size = new System.Drawing.Size(292, 20);
             this.txtClub.TabIndex = 11;
             // 
             // btnCancel
             // 
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancel.Location = new System.Drawing.Point(282, 385);
+            this.btnCancel.Location = new System.Drawing.Point(374, 385);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
             this.btnCancel.TabIndex = 26;
@@ -300,7 +301,7 @@
             // 
             // btnSaveAndCreateNew
             // 
-            this.btnSaveAndCreateNew.Location = new System.Drawing.Point(15, 385);
+            this.btnSaveAndCreateNew.Location = new System.Drawing.Point(174, 385);
             this.btnSaveAndCreateNew.Name = "btnSaveAndCreateNew";
             this.btnSaveAndCreateNew.Size = new System.Drawing.Size(113, 23);
             this.btnSaveAndCreateNew.TabIndex = 16;
@@ -315,11 +316,22 @@
             this.txtID.Size = new System.Drawing.Size(100, 20);
             this.txtID.TabIndex = 29;
             // 
+            // btnDelete
+            // 
+            this.btnDelete.Location = new System.Drawing.Point(12, 385);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(75, 23);
+            this.btnDelete.TabIndex = 30;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
             // frmParticipant
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(376, 415);
+            this.ClientSize = new System.Drawing.Size(461, 415);
+            this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.txtID);
             this.Controls.Add(this.btnSaveAndCreateNew);
             this.Controls.Add(this.chkIsActive);
@@ -391,5 +403,6 @@
         private System.Windows.Forms.CheckBox chkIsActive;
         private System.Windows.Forms.Button btnSaveAndCreateNew;
         private System.Windows.Forms.TextBox txtID;
+        private System.Windows.Forms.Button btnDelete;
     }
 }
