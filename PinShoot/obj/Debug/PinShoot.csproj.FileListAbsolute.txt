@@ -8,10 +8,14 @@ C:\Projects\PinShoot\PinShoot\obj\Debug\PinShoot.exe
 C:\Projects\PinShoot\PinShoot\obj\Debug\PinShoot.pdb
 C:\Projects\PinShoot\PinShoot\obj\Debug\PinShoot.frmParticipant.resources
 C:\Projects\PinShoot\PinShoot\obj\Debug\PinShoot.ParticpantList.resources
-C:\Projects\PinShoot\PinShoot\obj\Debug\PinShoot.csprojResolveAssemblyReference.cache
 C:\Projects\PinShoot\PinShoot\obj\Debug\PinShoot.EventList.resources
 C:\Projects\PinShoot\PinShoot\obj\Debug\PinShoot.frmEvent.resources
 C:\Projects\PinShoot\PinShoot\obj\Debug\PinShoot.TeamList.resources
 C:\Projects\PinShoot\PinShoot\obj\Debug\PinShoot.Team.resources
 C:\Projects\PinShoot\PinShoot\obj\Debug\PinShoot.FivePinResults.resources
 C:\Projects\PinShoot\PinShoot\obj\Debug\PinShoot.FivePinTimeEntry.resources
+C:\Projects\PinShoot\PinShoot\obj\Debug\PinShoot.OtherResults.resources
+C:\Projects\PinShoot\PinShoot\obj\Debug\PinShoot.OtherTimeEntry.resources
+C:\Projects\PinShoot\PinShoot\obj\Debug\PinShoot.TeamTimeEntry.resources
+C:\Projects\PinShoot\PinShoot\obj\Debug\PinShoot.TeamResults.resources
+C:\Projects\PinShoot\PinShoot\obj\Debug\PinShoot.csprojResolveAssemblyReference.cache

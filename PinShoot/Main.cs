@@ -54,5 +54,18 @@ namespace PinShoot
             FivePinResults frm = new FivePinResults();
             frm.ShowDialog();
         }
+
+        private void btnOtherTimeEntry_Click(object sender, EventArgs e)
+        {
+            OtherResults frm = new OtherResults();
+            frm.ShowDialog();
+
+        }
+
+        private void bubtnTeamTimeEntrytton1_Click(object sender, EventArgs e)
+        {
+            TeamResults frm = new TeamResults();
+            frm.ShowDialog();
+        }
     }
 }

@@ -161,6 +161,20 @@ namespace PinShoot
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
+            string message = "Are you sure you want to delete this entry?";
+            string caption = "Confirm Delete";
+            MessageBoxButtons buttons = MessageBoxButtons.YesNo;
+            DialogResult result;
+
+            // Displays the MessageBox.
+
+            result = MessageBox.Show(message, caption, buttons);
+
+            if (result == System.Windows.Forms.DialogResult.No)
+            {
+                return;
+            }
+
             var viewConString = System.Configuration.ConfigurationManager.ConnectionStrings["PinShootDb"].ConnectionString;
             using (var conn = new SqlConnection(viewConString))
             using (var command = new SqlCommand("SxParticipants", conn)

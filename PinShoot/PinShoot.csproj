@@ -76,6 +76,30 @@
     <Compile Include="Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
+    <Compile Include="TeamTimEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeamTimEntry.Designer.cs">
+      <DependentUpon>TeamTimEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeamResults.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeamResults.Designer.cs">
+      <DependentUpon>TeamResults.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherResults.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherResults.Designer.cs">
+      <DependentUpon>OtherResults.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherTimeEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherTimeEntry.Designer.cs">
+      <DependentUpon>OtherTimeEntry.cs</DependentUpon>
+    </Compile>
     <Compile Include="Participant.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -118,6 +142,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeamTimEntry.resx">
+      <DependentUpon>TeamTimEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeamResults.resx">
+      <DependentUpon>TeamResults.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherResults.resx">
+      <DependentUpon>OtherResults.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherTimeEntry.resx">
+      <DependentUpon>OtherTimeEntry.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Participant.resx">
       <DependentUpon>Participant.cs</DependentUpon>

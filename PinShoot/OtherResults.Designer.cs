@@ -1,6 +1,6 @@
 ﻿namespace PinShoot
 {
-    partial class FivePinResults
+    partial class OtherResults
     {
         /// <summary>
         /// Required designer variable.
@@ -28,54 +28,43 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnClose = new System.Windows.Forms.Button();
-            this.btnCreateNew = new System.Windows.Forms.Button();
-            this.btnPrint = new System.Windows.Forms.Button();
-            this.dtgrdFivePinResults = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
             this.ddlEvent = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.dtgrdFivePinResults = new System.Windows.Forms.DataGridView();
+            this.btnPrint = new System.Windows.Forms.Button();
+            this.btnCreateNew = new System.Windows.Forms.Button();
+            this.btnClose = new System.Windows.Forms.Button();
             this.RecId = new System.Windows.Forms.DataGridViewButtonColumn();
             this.EventName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Participant = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TotalTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BestTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TieBreaker = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Time1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Time2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Time3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Time4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Time5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Time6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dtgrdFivePinResults)).BeginInit();
             this.SuspendLayout();
             // 
-            // btnClose
+            // ddlEvent
             // 
-            this.btnClose.Location = new System.Drawing.Point(936, 683);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(75, 23);
-            this.btnClose.TabIndex = 0;
-            this.btnClose.Text = "&Close";
-            this.btnClose.UseVisualStyleBackColor = true;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            this.ddlEvent.DisplayMember = "ParticipantName";
+            this.ddlEvent.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ddlEvent.FormattingEnabled = true;
+            this.ddlEvent.Location = new System.Drawing.Point(53, 5);
+            this.ddlEvent.Name = "ddlEvent";
+            this.ddlEvent.Size = new System.Drawing.Size(288, 21);
+            this.ddlEvent.TabIndex = 11;
+            this.ddlEvent.ValueMember = "RecId";
+            this.ddlEvent.SelectedIndexChanged += new System.EventHandler(this.ddlEvent_SelectedIndexChanged);
             // 
-            // btnCreateNew
+            // label1
             // 
-            this.btnCreateNew.Location = new System.Drawing.Point(29, 683);
-            this.btnCreateNew.Name = "btnCreateNew";
-            this.btnCreateNew.Size = new System.Drawing.Size(75, 23);
-            this.btnCreateNew.TabIndex = 1;
-            this.btnCreateNew.Text = "Create &New";
-            this.btnCreateNew.UseVisualStyleBackColor = true;
-            this.btnCreateNew.Click += new System.EventHandler(this.btnCreateNew_Click);
-            // 
-            // btnPrint
-            // 
-            this.btnPrint.Location = new System.Drawing.Point(855, 683);
-            this.btnPrint.Name = "btnPrint";
-            this.btnPrint.Size = new System.Drawing.Size(75, 23);
-            this.btnPrint.TabIndex = 2;
-            this.btnPrint.Text = "&Print";
-            this.btnPrint.UseVisualStyleBackColor = true;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 8);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "Event";
             // 
             // dtgrdFivePinResults
             // 
@@ -86,41 +75,47 @@
             this.RecId,
             this.EventName,
             this.Participant,
-            this.TotalTime,
+            this.BestTime,
             this.TieBreaker,
             this.Time1,
             this.Time2,
-            this.Time3,
-            this.Time4,
-            this.Time5,
-            this.Time6});
-            this.dtgrdFivePinResults.Location = new System.Drawing.Point(12, 30);
+            this.Time3});
+            this.dtgrdFivePinResults.Location = new System.Drawing.Point(12, 32);
             this.dtgrdFivePinResults.Name = "dtgrdFivePinResults";
             this.dtgrdFivePinResults.ReadOnly = true;
             this.dtgrdFivePinResults.Size = new System.Drawing.Size(998, 647);
-            this.dtgrdFivePinResults.TabIndex = 3;
+            this.dtgrdFivePinResults.TabIndex = 9;
             this.dtgrdFivePinResults.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgrdFivePinResults_CellContentClick);
             // 
-            // label1
+            // btnPrint
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 6);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Event";
+            this.btnPrint.Location = new System.Drawing.Point(855, 685);
+            this.btnPrint.Name = "btnPrint";
+            this.btnPrint.Size = new System.Drawing.Size(75, 23);
+            this.btnPrint.TabIndex = 8;
+            this.btnPrint.Text = "&Print";
+            this.btnPrint.UseVisualStyleBackColor = true;
             // 
-            // ddlEvent
+            // btnCreateNew
             // 
-            this.ddlEvent.DisplayMember = "ParticipantName";
-            this.ddlEvent.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.ddlEvent.FormattingEnabled = true;
-            this.ddlEvent.Location = new System.Drawing.Point(53, 3);
-            this.ddlEvent.Name = "ddlEvent";
-            this.ddlEvent.Size = new System.Drawing.Size(288, 21);
-            this.ddlEvent.TabIndex = 5;
-            this.ddlEvent.ValueMember = "RecId";
-            this.ddlEvent.SelectedIndexChanged += new System.EventHandler(this.ddlEvent_SelectedIndexChanged);
+            this.btnCreateNew.Location = new System.Drawing.Point(29, 685);
+            this.btnCreateNew.Name = "btnCreateNew";
+            this.btnCreateNew.Size = new System.Drawing.Size(75, 23);
+            this.btnCreateNew.TabIndex = 7;
+            this.btnCreateNew.Text = "Create &New";
+            this.btnCreateNew.UseVisualStyleBackColor = true;
+            this.btnCreateNew.Click += new System.EventHandler(this.btnCreateNew_Click);
+            // 
+            // btnClose
+            // 
+            this.btnClose.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnClose.Location = new System.Drawing.Point(936, 685);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(75, 23);
+            this.btnClose.TabIndex = 6;
+            this.btnClose.Text = "&Close";
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // RecId
             // 
@@ -149,14 +144,14 @@
             this.Participant.ReadOnly = true;
             this.Participant.Width = 82;
             // 
-            // TotalTime
+            // BestTime
             // 
-            this.TotalTime.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.TotalTime.DataPropertyName = "TotalTime";
-            this.TotalTime.HeaderText = "Total Time";
-            this.TotalTime.Name = "TotalTime";
-            this.TotalTime.ReadOnly = true;
-            this.TotalTime.Width = 82;
+            this.BestTime.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.BestTime.DataPropertyName = "BestTime";
+            this.BestTime.HeaderText = "Best Time";
+            this.BestTime.Name = "BestTime";
+            this.BestTime.ReadOnly = true;
+            this.BestTime.Width = 79;
             // 
             // TieBreaker
             // 
@@ -194,48 +189,23 @@
             this.Time3.ReadOnly = true;
             this.Time3.Width = 64;
             // 
-            // Time4
+            // OtherResults
             // 
-            this.Time4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Time4.DataPropertyName = "Time4";
-            this.Time4.HeaderText = "Time 4";
-            this.Time4.Name = "Time4";
-            this.Time4.ReadOnly = true;
-            this.Time4.Width = 64;
-            // 
-            // Time5
-            // 
-            this.Time5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Time5.DataPropertyName = "Time5";
-            this.Time5.HeaderText = "Time 5";
-            this.Time5.Name = "Time5";
-            this.Time5.ReadOnly = true;
-            this.Time5.Width = 64;
-            // 
-            // Time6
-            // 
-            this.Time6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Time6.DataPropertyName = "Time6";
-            this.Time6.HeaderText = "Time 6";
-            this.Time6.Name = "Time6";
-            this.Time6.ReadOnly = true;
-            this.Time6.Width = 64;
-            // 
-            // FivePinResults
-            // 
+            this.AcceptButton = this.btnCreateNew;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1022, 718);
+            this.CancelButton = this.btnClose;
+            this.ClientSize = new System.Drawing.Size(1036, 719);
             this.Controls.Add(this.ddlEvent);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dtgrdFivePinResults);
             this.Controls.Add(this.btnPrint);
             this.Controls.Add(this.btnCreateNew);
             this.Controls.Add(this.btnClose);
-            this.Name = "FivePinResults";
+            this.Name = "OtherResults";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FivePinResults";
-            this.Load += new System.EventHandler(this.FivePinResults_Load);
+            this.Text = "OtherResults";
+            this.Load += new System.EventHandler(this.OtherResults_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtgrdFivePinResults)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -244,22 +214,19 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btnClose;
-        private System.Windows.Forms.Button btnCreateNew;
-        private System.Windows.Forms.Button btnPrint;
-        private System.Windows.Forms.DataGridView dtgrdFivePinResults;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox ddlEvent;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridView dtgrdFivePinResults;
+        private System.Windows.Forms.Button btnPrint;
+        private System.Windows.Forms.Button btnCreateNew;
+        private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.DataGridViewButtonColumn RecId;
         private System.Windows.Forms.DataGridViewTextBoxColumn EventName;
         private System.Windows.Forms.DataGridViewTextBoxColumn Participant;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TotalTime;
+        private System.Windows.Forms.DataGridViewTextBoxColumn BestTime;
         private System.Windows.Forms.DataGridViewTextBoxColumn TieBreaker;
         private System.Windows.Forms.DataGridViewTextBoxColumn Time1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Time2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Time3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Time4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Time5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Time6;
     }
 }
